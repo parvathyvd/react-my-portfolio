@@ -1,0 +1,133 @@
+header{
+    max-height: 60vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 3%;
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.theme-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+.theme-wrapper input::after{
+    content: '';
+    display: block;
+    background-color: rgb(206, 201, 201);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+.theme-wrapper #theme1:checked::after{
+    background: #d17be9;
+}
+.theme-wrapper #theme:checked::after{
+    background: var(--color-primary);
+}
+
+.text-vertical{
+    transform: rotate(90deg);
+}
+/****CTA****/
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/****Header socials****/
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left:0;
+    bottom: 1rem;
+}
+.header__socials svg{
+    font-size: 1.4rem;
+}
+.header__socials::after{
+    content: '';
+    height: 2rem;
+    width: 1px;
+    background-color: var(--color-primary);
+}
+/****Header Me image****/
+
+.me{
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0 ;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.scroll__down{
+    position: absolute;
+    right: -1.7rem;
+    bottom: 0rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+/******media queries medium ***/
+
+@media screen and (max-width: 1024px) {
+    header{
+        min-height: 40vh;
+    }
+    .header__socials{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+/******media queries medium ***/
+@media screen and (max-width: 600px) {
+ 
+    header{
+        max-height: 50vh;
+    }
+  
+    .header__socials::after{
+        display: none;
+    }
+    .scroll__down{
+        display: none;
+    }
+    .theme-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        top: -5rem;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .text-vertical{
+        display: none;
+    }
+}

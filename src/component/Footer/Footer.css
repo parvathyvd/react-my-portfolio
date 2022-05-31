@@ -1,0 +1,28 @@
+footer{
+    background: var(--color-primary);
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+}
+
+.footer__copyright{
+    margin-bottom: 4rem;
+    color: var(--color-bg);
+}
+.text-white{
+    color: #fff;
+}
+.text-white:hover{
+    color: grey;
+}
+@media screen and (max-width: 600px) {
+    .permalinks{
+        flex-direction: column;
+        gap: 1rem
+    }
+    .footer__socials{
+        margin-bottom: 2rem;
+
+}
+}
