@@ -60,6 +60,10 @@
   top: 0;
   left: 0;
 }
+.fill-percentage.html::after {
+  width: 80%;
+  background-color: #53a0d3;
+}
 .fill-percentage.css::after {
   width: 80%;
   background-color: #c0392b;

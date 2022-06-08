@@ -17,7 +17,7 @@ const Skills = () => {
                 <h4>HTML5</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage">&nbsp;</span>
+                <span className="fill-percentage html">&nbsp;</span>
               </div>
             </article>
             <article className="skills__details">
