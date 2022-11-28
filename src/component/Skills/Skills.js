@@ -1,8 +1,14 @@
 import React from "react";
 import "./Skills.css";
 import { BsPatchCheckFill } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <section id="skills">
       <h5>What skills I have</h5>
@@ -17,7 +23,12 @@ const Skills = () => {
                 <h4>HTML5</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage html">&nbsp;</span>
+                <span
+                  className="fill-percentage html animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
             <article className="skills__details">
@@ -26,7 +37,12 @@ const Skills = () => {
                 <h4>CSS3</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage css">&nbsp;</span>
+                <span
+                  className="fill-percentage css animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
             <article className="skills__details">
@@ -35,7 +51,12 @@ const Skills = () => {
                 <h4>Bootstrap</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage bootstrap">&nbsp;</span>
+                <span
+                  className="fill-percentage bootstrap animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
             <article className="skills__details">
@@ -44,7 +65,12 @@ const Skills = () => {
                 <h4>JS</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage js">&nbsp;</span>
+                <span
+                  className="fill-percentage js animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
             <article className="skills__details">
@@ -62,7 +88,12 @@ const Skills = () => {
                 <h4>React</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage react">&nbsp;</span>
+                <span
+                  className="fill-percentage react animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
 
@@ -72,7 +103,12 @@ const Skills = () => {
                 <h4>WordPress</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage wordpress">&nbsp;</span>
+                <span
+                  className="fill-percentage wordpress animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
             <article className="skills__details">
@@ -81,7 +117,12 @@ const Skills = () => {
                 <h4>CodeIgniter</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage codeigniter">&nbsp;</span>
+                <span
+                  className="fill-percentage codeigniter animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
 
@@ -91,7 +132,12 @@ const Skills = () => {
                 <h4>MySQL</h4>
               </div>
               <div className="fill-container">
-                <span className="fill-percentage mysql">&nbsp;</span>
+                <span
+                  className="fill-percentage mysql animation"
+                  data-aos="fade-right"
+                >
+                  &nbsp;
+                </span>
               </div>
             </article>
           </div>

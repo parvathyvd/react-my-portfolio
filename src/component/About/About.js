@@ -36,11 +36,12 @@ const About = () => {
           </div>
           <p>
             {" "}
-            I am a web developer specializing in Front end development. skillsd
-            with all stages of the development cycle for dynamic web projects.
-            Well-versed in numerous programming languages including HTML, CSS,
-            Bootstrap, PHP(Codeigniter) and Vanila Javascript(Jquery,React).
-            Strong background in Wordpress web development and design.
+            I am a web developer specializing in <em>FrontEnd Development</em>.
+            Skilled with all stages of the development cycle for dynamic web
+            projects. Well-versed in numerous programming languages including
+            HTML, CSS, Bootstrap, PHP(Codeigniter) and Vanila
+            Javascript(Jquery,React). Strong background in Wordpress web
+            development and design.
           </p>
           <a
             target="_blank"

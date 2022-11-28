@@ -14,9 +14,14 @@ import IMG11 from "../../assets/yp.png";
 import IMG12 from "../../assets/f4l.png";
 import IMG13 from "../../assets/gd.png";
 import IMG14 from "../../assets/nexter.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Portfolio = () => {
-  const images = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6];
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const data = [
     {
       id: 1,
@@ -89,18 +94,18 @@ const Portfolio = () => {
     {
       id: 11,
       image: IMG11,
-      title: "YP Longe",
-      demo: "https://yplounge.ca/",
+      title: "Life Canada",
+      demo: "https://lifecanada.org/",
     },
     {
       id: 12,
-      image: IMG12,
+      image: IMG13,
       title: "Gd Website",
-      demo: "https://gd.flywheelsites.com/",
+      demo: "https://www.globaldisciples.ca/",
     },
     {
       id: 13,
-      image: IMG13,
+      image: IMG12,
       title: "Foundation for living",
       demo: "https://foundations4living.ca/",
     },
@@ -118,18 +123,32 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {data.map((dat, index) => {
           return (
-            <article className="portfolio__item" key={index}>
+            <article
+              className="portfolio__item animation"
+              key={index}
+              data-aos="zoom-in"
+            >
               <div className="portfolio__item-image">
-                <img src={dat.image} alt="portfolio image" />
+                <img src={dat.image} alt={dat.title} />
               </div>
               <h3>{dat.title}</h3>
               <div className="portfolio__item-cta">
                 {dat.github && (
-                  <a href={dat.github} className="btn" target="_blank">
+                  <a
+                    href={dat.github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Github
                   </a>
                 )}
-                <a href={dat.demo} className="btn btn-primary" target="_blank">
+                <a
+                  href={dat.demo}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Live Demo
                 </a>
               </div>

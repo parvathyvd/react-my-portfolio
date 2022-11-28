@@ -1,7 +1,6 @@
 header{
     max-height: 60vh;
     padding-top: 7rem;
-    overflow: hidden;
     position: relative;
     padding-bottom: 3%;
 }
@@ -89,6 +88,8 @@ header{
     font-weight: 300;
     font-size: 0.9rem;
 }
+
+
 /******media queries medium ***/
 
 @media screen and (max-width: 1024px) {
